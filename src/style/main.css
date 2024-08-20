@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+.app {
+  @apply flex min-h-dvh w-dvw flex-col justify-center p-[5%] text-primary-800;
+  @apply bg-cover bg-fixed bg-center bg-no-repeat opacity-100 saturate-[0.75];
+  background-image: url('../image/patterns2.svg'), url('../image/shiny3.svg');
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.wrapper {
+  @apply mx-auto flex w-full max-w-[1200px] flex-col;
+  /* @apply flex flex-col justify-center items-center gap-10 px-32 py-20 mx-auto max-w-[1400px] bg-black/40 rounded-3xl;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5); */
+}
+
+.title {
+  @apply text-[8vw] font-bold tracking-widest lg:flex lg:flex-col lg:text-center;
+  font-size: clamp(1.25px, 9vw, 3rem);
+}
+
+.description {
+  @apply mt-[2dvh] font-medium tracking-wider text-primary-400 lg:mx-auto lg:max-w-[400px] lg:text-center sm:text-sm;
+}
+
+/* images */
+.images {
+  @apply aspect-video min-h-[200px] grow bg-gray-500;
+}
+
+/* downloads */
+.downloads {
+  @apply mt-[20dvh] grid grid-cols-[260px_260px_260px] gap-x-10 gap-y-5 lg:mx-auto lg:mt-[15dvh] lg:grid-cols-1;
+}
+
+.download_button {
+  @apply flex items-center gap-[0.5em] rounded-lg border-2 border-current px-7 py-3.5 text-primary hover:border-transparent hover:bg-primary/75 hover:text-white;
+}
+
+.download_icon {
+  @apply size-12 shrink-0 sm:size-10;
+}
+
+.download_title {
+  @apply mt-0.5 grow whitespace-nowrap text-center text-xl font-bold tracking-wider sm:text-lg;
+}
