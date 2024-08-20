@@ -26,7 +26,7 @@
 }
 
 .app {
-  @apply flex min-h-dvh w-full flex-col justify-center p-[5%] text-primary-800;
+  @apply flex min-h-dvh w-full flex-col justify-center p-[5%] text-primary-800 tracking-widest;
   @apply bg-cover bg-fixed bg-center bg-no-repeat opacity-100 saturate-[0.75];
   background-image: url('../image/patterns2.svg'), url('../image/shiny3.svg');
   font-family: 'Noto Sans JP', sans-serif;
@@ -39,12 +39,12 @@
 }
 
 .title {
-  @apply text-[8vw] font-bold tracking-widest lg:flex lg:flex-col lg:text-center;
+  @apply text-[8vw] font-bold lg:flex lg:flex-col lg:text-center;
   font-size: clamp(1.25px, 9vw, 3rem);
 }
 
 .description {
-  @apply mt-[2dvh] font-medium tracking-wider text-primary-400 lg:mx-auto lg:max-w-[400px] lg:text-center sm:text-sm;
+  @apply mt-[2dvh] font-medium text-primary-400 lg:mx-auto lg:max-w-[400px] lg:text-center sm:text-sm;
 }
 
 /* images */
@@ -54,7 +54,7 @@
 
 /* downloads */
 .downloads {
-  @apply mt-[20dvh] grid grid-cols-[260px_260px_260px] gap-x-10 gap-y-5 lg:mx-auto lg:mt-[15dvh] lg:grid-cols-1;
+  @apply mt-[20dvh] grid grid-cols-[260px_260px_260px] gap-x-10 gap-y-5 mr-auto lg:ml-auto lg:mt-[15dvh] lg:grid-cols-1;
 }
 
 .download_button {
@@ -67,4 +67,8 @@
 
 .download_title {
   @apply mt-0.5 grow whitespace-nowrap text-center text-xl font-bold tracking-wider sm:text-lg;
+}
+
+.sub {
+  @apply text-xs font-medium col-span-3 -mt-2 ml-auto text-primary-400 lg:col-span-1;
 }

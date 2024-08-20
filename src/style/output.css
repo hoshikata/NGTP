@@ -603,6 +603,7 @@ video {
   flex-direction: column;
   justify-content: center;
   padding: 5%;
+  letter-spacing: 0.1em;
   color: rgba(43, 14, 71, 1);
   background-size: cover;
   background-attachment: fixed;
@@ -629,7 +630,6 @@ video {
 .title {
   font-size: 8vw;
   font-weight: 700;
-  letter-spacing: 0.1em;
 }
 
 @media (max-width: 992px) {
@@ -647,7 +647,6 @@ video {
 .description {
   margin-top: 2dvh;
   font-weight: 500;
-  letter-spacing: 0.05em;
   --tw-text-opacity: 1;
   color: rgb(191 94 130 / var(--tw-text-opacity));
 }
@@ -682,6 +681,7 @@ video {
 
 .downloads {
   margin-top: 20dvh;
+  margin-right: auto;
   display: grid;
   grid-template-columns: 260px 260px 260px;
   -moz-column-gap: 2.5rem;
@@ -692,7 +692,6 @@ video {
 @media (max-width: 992px) {
   .downloads {
     margin-left: auto;
-    margin-right: auto;
     margin-top: 15dvh;
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -750,7 +749,22 @@ video {
   }
 }
 
+.sub {
+  grid-column: span 3 / span 3;
+  margin-top: -0.5rem;
+  margin-left: auto;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(191 94 130 / var(--tw-text-opacity));
+}
+
 @media (max-width: 992px) {
+  .sub {
+    grid-column: span 1 / span 1;
+  }
+
   .lg\:size-24 {
     width: 6rem;
     height: 6rem;
