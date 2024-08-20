@@ -68,5 +68,5 @@
 }
 
 .sub {
-  @apply text-xs font-medium col-span-3 -mt-2 ml-auto text-primary-400 lg:col-span-1;
+  @apply text-xs font-medium col-span-3 -mt-3 text-right text-primary-400 lg:col-span-1;
 }

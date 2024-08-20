@@ -752,8 +752,8 @@ video {
 
 .sub {
   grid-column: span 3 / span 3;
-  margin-top: -0.5rem;
-  margin-left: auto;
+  margin-top: -0.75rem;
+  text-align: right;
   font-size: 0.75rem;
   line-height: 1rem;
   font-weight: 500;
