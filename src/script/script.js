@@ -28,4 +28,14 @@
     link.click()
     link.remove()
   })
+
+  const marshButton = document.querySelector('#marshmallow')
+  marshButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    const link = document.createElement('a')
+    link.href = "https://marshmallow-qa.com/p2ukw0nudq7lac5"
+    link.target = "_blank"
+    link.click()
+    link.remove()
+  })
 }

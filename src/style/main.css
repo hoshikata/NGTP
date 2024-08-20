@@ -26,7 +26,7 @@
 }
 
 .app {
-  @apply flex min-h-dvh w-full flex-col justify-center px-[5%] py-[2%] text-primary-800 tracking-widest;
+  @apply flex min-h-dvh w-full flex-col justify-center px-[5%] py-[5%] text-primary-800 tracking-widest;
   @apply bg-cover bg-fixed bg-center bg-no-repeat opacity-100 saturate-[0.75];
   background-image: url('../image/patterns2.svg'), url('../image/shiny3.svg');
   font-family: 'Noto Sans JP', sans-serif;
@@ -52,11 +52,11 @@
 
 /* downloads */
 .downloads {
-  @apply mt-[20dvh] grid grid-cols-[260px_260px_260px] gap-x-10 gap-y-5 mr-auto lg:ml-auto lg:mt-[15dvh] lg:grid-cols-1;
+  @apply mt-[20dvh] grid grid-cols-[260px_260px_260px_auto] gap-x-7 gap-y-5 mr-auto lg:ml-auto lg:mt-[15dvh] lg:grid-cols-1;
 }
 
 .download_button {
-  @apply flex items-center gap-[0.5em] rounded-lg border-2 border-current px-7 py-3.5 text-primary hover:border-transparent hover:bg-primary/75 hover:text-white;
+  @apply flex items-center gap-[0.5em] rounded-lg border-2 border-current px-7 py-3.5 text-primary hover:border-transparent hover:bg-primary/75 hover:text-white lg:max-w-[280px] lg:w-full lg:mx-auto;
 }
 
 .download_icon {
@@ -67,6 +67,14 @@
   @apply mt-0.5 grow whitespace-nowrap text-center text-xl font-bold tracking-wider sm:text-lg;
 }
 
+.marshmallow {
+  @apply size-20 p-3.5 text-primary rounded-lg hover:bg-primary/75 hover:text-white lg:mx-auto;
+}
+
+.marshmallow img {
+  @apply size-full object-cover rounded-full;
+}
+
 .sub {
-  @apply text-xs font-medium col-span-3 -mt-3 text-right text-primary-400 lg:col-span-1;
+  @apply text-xs font-medium col-span-3 -mt-3 text-right text-primary-400 lg:col-span-1 lg:order-1;
 }
