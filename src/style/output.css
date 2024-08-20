@@ -602,7 +602,10 @@ video {
   width: 100%;
   flex-direction: column;
   justify-content: center;
-  padding: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   letter-spacing: 0.1em;
   color: rgba(43, 14, 71, 1);
   background-size: cover;
@@ -623,8 +626,6 @@ video {
   width: 100%;
   max-width: 1200px;
   flex-direction: column;
-  /* @apply flex flex-col justify-center items-center gap-10 px-32 py-20 mx-auto max-w-[1400px] bg-black/40 rounded-3xl;
-  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5); */
 }
 
 .title {

@@ -26,7 +26,7 @@
 }
 
 .app {
-  @apply flex min-h-dvh w-full flex-col justify-center p-[5%] text-primary-800 tracking-widest;
+  @apply flex min-h-dvh w-full flex-col justify-center px-[5%] py-[2%] text-primary-800 tracking-widest;
   @apply bg-cover bg-fixed bg-center bg-no-repeat opacity-100 saturate-[0.75];
   background-image: url('../image/patterns2.svg'), url('../image/shiny3.svg');
   font-family: 'Noto Sans JP', sans-serif;
@@ -34,8 +34,6 @@
 
 .wrapper {
   @apply mx-auto flex w-full max-w-[1200px] flex-col;
-  /* @apply flex flex-col justify-center items-center gap-10 px-32 py-20 mx-auto max-w-[1400px] bg-black/40 rounded-3xl;
-  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5); */
 }
 
 .title {
