@@ -762,15 +762,15 @@ video {
 .marshmallow {
   width: 5rem;
   height: 5rem;
-  border-radius: 0.5rem;
-  padding: 0.875rem;
+  border-radius: 9999px;
+  border-width: 2px;
+  border-color: transparent;
+  padding: 0.5rem;
   color: rgba(255, 57, 188, 1);
 }
 
 .marshmallow:hover {
-  background-color: rgba(255, 57, 188, 0.75);
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  border-color: currentColor;
 }
 
 @media (max-width: 992px) {
@@ -803,6 +803,7 @@ video {
   .sub {
     order: 1;
     grid-column: span 1 / span 1;
+    text-align: center;
   }
 
   .lg\:size-24 {

@@ -68,7 +68,7 @@
 }
 
 .marshmallow {
-  @apply size-20 p-3.5 text-primary rounded-lg hover:bg-primary/75 hover:text-white lg:mx-auto;
+  @apply size-20 p-2 text-primary rounded-full hover:border-current border-2 border-transparent lg:mx-auto;
 }
 
 .marshmallow img {
@@ -76,5 +76,5 @@
 }
 
 .sub {
-  @apply text-xs font-medium col-span-3 -mt-3 text-right text-primary-400 lg:col-span-1 lg:order-1;
+  @apply text-xs font-medium col-span-3 -mt-3 text-right text-primary-400 lg:col-span-1 lg:order-1 lg:text-center;
 }
